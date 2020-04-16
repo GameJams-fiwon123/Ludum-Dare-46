@@ -571,7 +571,7 @@ SpriteRenderer:
   m_SortingLayerID: -251268665
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c506ca4a1a524f343b6a9f2bd1b2a44b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3994a699c553c6408bfdc880cf52ded, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -845,6 +845,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+        type: 3}
+      propertyPath: orthographic size
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952a0d39e3c11f344883cf313da556be, type: 3}
