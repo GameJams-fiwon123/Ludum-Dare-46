@@ -14,6 +14,17 @@ public class Player : MonoBehaviour
 
 	Animator anim;
 
+	public static Player instance;
+
+	private void Awake() {
+		if (FindObjectsOfType<Player>().Length > 1) {
+			Destroy(gameObject);
+		} else {
+			DontDestroyOnLoad(gameObject);
+			instance = this;
+		}
+	}
+
 	// Start is called before the first frame update
 	void Start() {
 		rbd2D = GetComponent<Rigidbody2D>();
@@ -24,7 +35,12 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update() {
 		InputMovement();
+		InputInteraction();
 		Animation();
+	}
+
+	private void InputInteraction() {
+
 	}
 
 	private void Animation() {
@@ -51,5 +67,9 @@ public class Player : MonoBehaviour
 
 	private void Movement() {
 		rbd2D.velocity = motion.normalized * speed * Time.fixedDeltaTime;
+	}
+
+	public void SetPosition(Vector3 newPosition) {
+		transform.position = newPosition;
 	}
 }

@@ -4,5 +4,44 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu.unity
+    guid: 6b7c39862e6a57e46a99af6e93f343c2
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/House1.unity
+    guid: 30ea1ae66a2522747b0ee8da6d4df73d
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/City.unity
+    guid: 7883ea62d2aed2b41b54ff5ac820e804
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Desert.unity
+    guid: 1d3b7b99f27ba0446972a74d2a1833fd
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Forest.unity
+    guid: f5102eae6d9995e4ebbd872ceac25536
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Grass1.unity
+    guid: 26a24ee349b192b47be05062c6b75503
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Grass2.unity
+    guid: a7d4f3fa02d0c4b449dc1816ed1e6fcc
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/House2.unity
+    guid: 89ab068deee6c5041a88930fb4aaa08c
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/House3.unity
+    guid: c98e27ed1ef649a408e60adc92f4092e
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/House4.unity
+    guid: b629c6a68a4302441a9868fe3a3c1014
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Ice.unity
+    guid: b359e590a6e0e9e4783698640644ed9b
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/TowerFloor1.unity
+    guid: 016355079dced3948b9378114b71f7c3
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/TowerFloor2.unity
+    guid: d28a057c83bc28f48b9961bf4faf6bce
   m_configObjects: {}
