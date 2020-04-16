@@ -30,11 +30,10 @@ public class Player : MonoBehaviour
 	private void Animation() {
 		if (motion.x != 0 || motion.y != 0) {
 			anim.SetBool("isWalking", true);
+			sprRenderer.flipX = motion.x == 1f ? false : true;
 		} else {
 			anim.SetBool("isWalking", false);
 		}
-
-		sprRenderer.flipX = motion.x == 1f ? false : true;
 
 		anim.SetInteger("horizontal", (int)motion.x);
 		anim.SetInteger("vertical", (int)motion.y);
@@ -45,11 +44,12 @@ public class Player : MonoBehaviour
 		motion.y = Input.GetAxisRaw("Vertical");
 	}
 
+	// Physic
 	void FixedUpdate() {
 		Movement();
 	}
 
 	private void Movement() {
-		rbd2D.velocity = motion * speed * Time.fixedDeltaTime;
+		rbd2D.velocity = motion.normalized * speed * Time.fixedDeltaTime;
 	}
 }
