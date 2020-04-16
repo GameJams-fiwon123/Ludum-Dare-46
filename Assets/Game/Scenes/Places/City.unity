@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+        type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952a0d39e3c11f344883cf313da556be, type: 3}
 --- !u!1 &291278589
@@ -238,6 +243,8 @@ MonoBehaviour:
   exactPosition: 1
   isX: 0
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &291278592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -405,7 +412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567953872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.25, y: 0, z: 0}
+  m_LocalPosition: {x: 3.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 331486838}
@@ -423,10 +430,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7974dadf2de4b4faba2d402d3c7f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlace: 10
+  nextPlace: 2
   exactPosition: 0
   isX: 1
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &567953875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -440,7 +449,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8, y: 0}
+  m_Offset: {x: 1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -560,7 +569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201225900}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.22, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 7, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331486838}
@@ -582,6 +591,8 @@ MonoBehaviour:
   exactPosition: 0
   isX: 0
   isY: 1
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1201225903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -595,7 +606,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.8}
+  m_Offset: {x: 0, y: -1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -656,6 +667,8 @@ MonoBehaviour:
   exactPosition: 1
   isX: 0
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1280557526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -846,7 +859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608737386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.25, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 7, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 331486838}
@@ -868,6 +881,8 @@ MonoBehaviour:
   exactPosition: 0
   isX: 0
   isY: 1
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1608737389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -881,7 +896,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.8}
+  m_Offset: {x: 0, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -989,7 +1004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618405853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.72, y: 0, z: 0}
+  m_LocalPosition: {x: -3.04, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 331486838}
@@ -1007,10 +1022,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7974dadf2de4b4faba2d402d3c7f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlace: 2
+  nextPlace: 10
   exactPosition: 0
   isX: 1
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1618405856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1024,7 +1041,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3, y: 0}
+  m_Offset: {x: -1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1085,6 +1102,8 @@ MonoBehaviour:
   exactPosition: 1
   isX: 0
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1811373641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1159,6 +1178,8 @@ MonoBehaviour:
   exactPosition: 1
   isX: 0
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1891174995
 BoxCollider2D:
   m_ObjectHideFlags: 0
