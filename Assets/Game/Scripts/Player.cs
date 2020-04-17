@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
+using Yarn.Unity.Example;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class Player : MonoBehaviour
 	Vector2 motion = Vector2.zero;
 
 	Animator anim;
+
+	bool canInteract = false;
+	GameObject objInteract;
 
 	public static Player instance;
 
@@ -40,7 +45,26 @@ public class Player : MonoBehaviour
 	}
 
 	private void InputInteraction() {
-
+		if (Input.GetKeyDown(KeyCode.Z) && canInteract && objInteract) {
+			if (objInteract.tag == "Note") {
+				if (transform.childCount == 0) {
+					anim.SetBool("haveNote", true);
+					objInteract.transform.parent = transform;
+					objInteract.gameObject.SetActive(false);
+					objInteract = null;
+				}
+			}else if (objInteract.tag == "NPC"){
+				FindObjectOfType<DialogueRunner>().StartDialogue(objInteract.GetComponent<NPC>().talkToNode);
+			}
+		} else if (Input.GetKeyDown(KeyCode.X)) {
+			if (transform.childCount > 0) {
+				anim.SetBool("haveNote", false);
+				transform.GetChild(0).gameObject.SetActive(true);
+				transform.GetChild(0).gameObject.GetComponent<Note>().placeName = FindObjectOfType<TeleportManager>().currentPlace;
+				transform.GetChild(0).transform.position = transform.position;
+				transform.GetChild(0).transform.parent = GameObject.FindGameObjectWithTag("Objects").transform;
+			}
+		}
 	}
 
 	private void Animation() {
@@ -71,5 +95,19 @@ public class Player : MonoBehaviour
 
 	public void SetPosition(Vector3 newPosition) {
 		transform.position = newPosition;
+	}
+
+	private void OnTriggerStay2D(Collider2D collision) {
+		if (collision.tag == "Note" || collision.tag == "NPC") {
+			canInteract = true;
+			objInteract = collision.gameObject;
+		} 
+	}
+
+	private void OnTriggerExit2D(Collider2D collision) {
+		if (collision.tag == "Note" || collision.tag == "NPC") {
+			canInteract = false;
+			objInteract = null;
+		}
 	}
 }

@@ -636,6 +636,8 @@ MonoBehaviour:
   exactPosition: 1
   isX: 0
   isY: 0
+  isInverted: 0
+  isChangeValue: 0
 --- !u!61 &1391449547
 BoxCollider2D:
   m_ObjectHideFlags: 0

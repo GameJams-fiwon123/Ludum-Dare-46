@@ -1,0 +1,8 @@
+title: cityNPC
+---
+<<if $notes is 0 >>
+    Player: Hey. #line:794945
+    NPC: Oh! Hi. #line:2dc39b
+    NPC: That's the tower where the notes that make up this beautiful melody are. #line:34de2f
+<<endif>>
+===

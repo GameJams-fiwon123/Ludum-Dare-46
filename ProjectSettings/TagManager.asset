@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Note
   - Teleport
+  - Objects
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -45,6 +47,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 4043698631
+    locked: 0
+  - name: Floor
+    uniqueID: 3908003979
     locked: 0
   - name: Foreground
     uniqueID: 2205987875

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 25729816}
   - component: {fileID: 25729817}
   - component: {fileID: 25729818}
+  - component: {fileID: 25729819}
   m_Layer: 0
   m_Name: do
   m_TagString: Note
@@ -189,7 +190,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7d56ea477f5e4d24ea2518aabb1da31a, type: 3}
@@ -229,6 +230,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &25729819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25729815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1 &357670958
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +254,7 @@ GameObject:
   - component: {fileID: 357670959}
   - component: {fileID: 357670960}
   - component: {fileID: 357670961}
+  - component: {fileID: 357670962}
   m_Layer: 0
   m_Name: la
   m_TagString: Note
@@ -297,7 +312,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2d2e12e09bf438b4397cdb7875be3cce, type: 3}
@@ -337,6 +352,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &357670962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357670958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1 &420410754
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +376,7 @@ GameObject:
   - component: {fileID: 420410755}
   - component: {fileID: 420410756}
   - component: {fileID: 420410757}
+  - component: {fileID: 420410758}
   m_Layer: 0
   m_Name: si
   m_TagString: Note
@@ -405,7 +434,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1122c31cc40990d4fbad1cf6202bacd1, type: 3}
@@ -445,6 +474,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &420410758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420410754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1001 &453626094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -604,9 +646,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913403686}
+  - component: {fileID: 913403687}
   m_Layer: 0
   m_Name: Notes
-  m_TagString: Untagged
+  m_TagString: Objects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,6 +675,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913403687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913403685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c1bff1e352b0546bd426b49f8c1346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes:
+  - {fileID: 25729819}
+  - {fileID: 974974903}
+  - {fileID: 1727882617}
+  - {fileID: 1780420914}
+  - {fileID: 1998709485}
+  - {fileID: 357670962}
+  - {fileID: 420410758}
 --- !u!1 &974974899
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +706,7 @@ GameObject:
   - component: {fileID: 974974900}
   - component: {fileID: 974974901}
   - component: {fileID: 974974902}
+  - component: {fileID: 974974903}
   m_Layer: 0
   m_Name: re
   m_TagString: Note
@@ -700,7 +764,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e92abb0261503d846a3fe880494645d6, type: 3}
@@ -740,6 +804,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &974974903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974974899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1001 &1560057905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,6 +884,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.9999999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952a0d39e3c11f344883cf313da556be, type: 3}
 --- !u!1 &1727882613
@@ -820,6 +902,7 @@ GameObject:
   - component: {fileID: 1727882614}
   - component: {fileID: 1727882615}
   - component: {fileID: 1727882616}
+  - component: {fileID: 1727882617}
   m_Layer: 0
   m_Name: mi
   m_TagString: Note
@@ -877,7 +960,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3757325d4139b324f93fdbf600bd9eeb, type: 3}
@@ -917,6 +1000,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1727882617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727882613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1 &1780420910
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +1024,7 @@ GameObject:
   - component: {fileID: 1780420911}
   - component: {fileID: 1780420912}
   - component: {fileID: 1780420913}
+  - component: {fileID: 1780420914}
   m_Layer: 0
   m_Name: sol
   m_TagString: Note
@@ -985,7 +1082,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0371cedac5a25964fb6b359d45f597eb, type: 3}
@@ -1025,6 +1122,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1780420914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780420910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1001 &1820895539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1150,6 +1260,7 @@ GameObject:
   - component: {fileID: 1998709482}
   - component: {fileID: 1998709483}
   - component: {fileID: 1998709484}
+  - component: {fileID: 1998709485}
   m_Layer: 0
   m_Name: fa
   m_TagString: Note
@@ -1207,7 +1318,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2088979421
+  m_SortingLayerID: -386963317
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 767d70ff6cb2c8b4e9a680b9d4a607c3, type: 3}
@@ -1247,6 +1358,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &1998709485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998709481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd252d6a4cb52de458e241c003bb8a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeName: 12
 --- !u!1001 &2619116820026676861
 PrefabInstance:
   m_ObjectHideFlags: 0

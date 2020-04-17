@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/Places/House3.unity
     guid: c98e27ed1ef649a408e60adc92f4092e
   - enabled: 1
-    path: Assets/Game/Scenes/Places/House4.unity
+    path: Assets/Game/Scenes/Places/PostOffice.unity
     guid: b629c6a68a4302441a9868fe3a3c1014
   - enabled: 1
     path: Assets/Game/Scenes/Places/Ice.unity
