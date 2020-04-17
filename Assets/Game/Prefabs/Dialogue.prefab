@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4786614289279648091}
   - component: {fileID: 3459252876660761181}
+  - component: {fileID: 1777366920}
   m_Layer: 0
   m_Name: Dialogue
   m_TagString: Untagged
@@ -47,6 +48,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRunner: {fileID: 7089212668984082846}
+--- !u!114 &1777366920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609242665785016893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f1f3e0a9192cb4aa0967e4fe2d8391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5562290459672915311
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,12 +829,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1777366920}
+        m_MethodName: StartAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onLineFinishDisplaying:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5562290459672915311}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1777366920}
+        m_MethodName: StopAudio
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

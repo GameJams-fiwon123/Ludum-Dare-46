@@ -50,8 +50,11 @@ public class Player : MonoBehaviour
 				if (transform.childCount == 0) {
 					anim.SetBool("haveNote", true);
 					objInteract.transform.parent = transform;
+					objInteract.transform.position = transform.position;
+					objInteract.GetComponent<Note>().isPlayer = true;
 					objInteract.gameObject.SetActive(false);
 					objInteract = null;
+					FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Pegar");
 				}
 			}else if (objInteract.tag == "NPC"){
 				FindObjectOfType<DialogueRunner>().StartDialogue(objInteract.GetComponent<NPC>().talkToNode);
@@ -59,10 +62,12 @@ public class Player : MonoBehaviour
 		} else if (Input.GetKeyDown(KeyCode.X)) {
 			if (transform.childCount > 0) {
 				anim.SetBool("haveNote", false);
+				transform.GetChild(0).GetComponent<Note>().isPlayer = false;
 				transform.GetChild(0).gameObject.SetActive(true);
 				transform.GetChild(0).gameObject.GetComponent<Note>().placeName = FindObjectOfType<TeleportManager>().currentPlace;
 				transform.GetChild(0).transform.position = transform.position;
 				transform.GetChild(0).transform.parent = GameObject.FindGameObjectWithTag("Objects").transform;
+				FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Largar");
 			}
 		}
 	}

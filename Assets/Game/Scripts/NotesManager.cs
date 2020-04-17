@@ -19,7 +19,8 @@ public class NotesManager : MonoBehaviour
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
 		foreach (Note note in notes) {
 			if (note.placeName == FindObjectOfType<TeleportManager>().currentPlace) {
-				note.gameObject.SetActive(true);
+				if (!note.isPlayer)
+					note.gameObject.SetActive(true);
 			} else {
 				note.gameObject.SetActive(false);
 			}
