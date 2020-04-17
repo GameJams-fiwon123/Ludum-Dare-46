@@ -53,19 +53,19 @@ MonoBehaviour:
   Preload: 0
   Params:
   - Name: mi
-    Value: 0
+    Value: 0.8
   - Name: si
-    Value: 0
+    Value: 0.8
   - Name: la
-    Value: 0
+    Value: 0.8
   - Name: re
-    Value: 0
+    Value: 0.8
   - Name: do
-    Value: 0
+    Value: 0.8
   - Name: fa
-    Value: 0
+    Value: 0.8
   - Name: sol
-    Value: 0
+    Value: 0.8
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -81,3 +81,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1df2b22d8c621a4fabe46d4d16b3313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioGameplay: {fileID: 6247714699284099190}

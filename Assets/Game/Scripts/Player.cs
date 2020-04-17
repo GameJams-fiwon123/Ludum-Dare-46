@@ -122,6 +122,7 @@ public class Player : MonoBehaviour
 
 	public void DestroyNote() {
 		anim.SetBool("haveNote", false);
-		Destroy(transform.GetChild(0));
+		transform.GetChild(0).gameObject.SetActive(true);
+		Destroy(transform.GetChild(0).gameObject);
 	}
 }

@@ -13,6 +13,7 @@ public class Hole : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Z) && canInteract) {
 			if (Player.instance.HasNote()) {
 				GameManager.instance.completedDesert = true;
+				Player.instance.DestroyNote();
 			}else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}

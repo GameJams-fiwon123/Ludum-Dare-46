@@ -5,55 +5,62 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+	IEnumerator LoadScene(string currentScene, string nextScene) {
+		yield return new WaitForEndOfFrame();
+		SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
+		yield return new WaitForEndOfFrame();
+		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+	}
+
 	public void LoadMainMenu() {
 		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void LoadHouse1() {
-		SceneManager.LoadScene("House1");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "House1"));
 	}
 
 	public void LoadHouse2() {
-		SceneManager.LoadScene("House2");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "House2"));
 	}
 
 	public void LoadHouse3() {
-		SceneManager.LoadScene("House3");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "House3"));
 	}
 
-	public void LoadHouse4() {
-		SceneManager.LoadScene("House4");
+	public void LoadPostOffice() {
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "PostOffice"));
 	}
 
 	public void LoadCity() {
-		SceneManager.LoadScene("City");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "City"));
 	}
 
 	public void LoadForest() {
-		SceneManager.LoadScene("Forest");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Forest"));
 	}
 
 	public void LoadGrass1() {
-		SceneManager.LoadScene("Grass1");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Grass1"));
 	}
 
 	public void LoadGrass2() {
-		SceneManager.LoadScene("Grass2");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Grass2"));
 	}
 
 	public void LoadDesert() {
-		SceneManager.LoadScene("Desert");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Desert"));
 	}
 
 	public void LoadIce() {
-		SceneManager.LoadScene("Ice");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Ice"));
 	}
 
 	public void LoadTowerFloor1() {
-		SceneManager.LoadScene("TowerFloor1");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "TowerFloor1"));
 	}
 
 	public void LoadTowerFloor2() {
-		SceneManager.LoadScene("TowerFloor2");
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "TowerFloor2"));
 	}
 }

@@ -376,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 4328872873397068511, guid: 22e2b4026eacb914e8100a4a89269839,
         type: 3}
       propertyPath: nextPlace
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22e2b4026eacb914e8100a4a89269839, type: 3}
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df7974dadf2de4b4faba2d402d3c7f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPlace: 7
+  nextPlace: 9
   exactPosition: 1
   isX: 0
   isY: 0

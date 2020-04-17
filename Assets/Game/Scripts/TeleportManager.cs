@@ -5,7 +5,7 @@ using UnityEngine;
 public class TeleportManager : MonoBehaviour
 {
 	public enum placesName { None ,City, Desert, Forest, Grass1, Grass2, House1, House2,
-										House3, House4, Ice, TowerFloor1, TowerFloor2}
+										House3, PostOffice, Ice, TowerFloor1, TowerFloor2}
 
 	public placesName currentPlace;
 
@@ -56,8 +56,8 @@ public class TeleportManager : MonoBehaviour
 			case placesName.House3:
 				FindObjectOfType<LevelManager>().LoadHouse3();
 				break;
-			case placesName.House4:
-				FindObjectOfType<LevelManager>().LoadHouse4();
+			case placesName.PostOffice:
+				FindObjectOfType<LevelManager>().LoadPostOffice();
 				break;
 			case placesName.Ice:
 				FindObjectOfType<LevelManager>().LoadIce();
