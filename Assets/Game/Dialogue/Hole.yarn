@@ -1,0 +1,6 @@
+title: Hole
+---
+<<if $completedDesert is false >>
+    Player: A hole... 
+<<endif>>
+===

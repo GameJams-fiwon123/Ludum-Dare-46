@@ -110,4 +110,13 @@ public class Player : MonoBehaviour
 			objInteract = null;
 		}
 	}
+
+	public bool HasNote() {
+		return anim.GetBool("haveNote");
+	}
+
+	public void DestroyNote() {
+		anim.SetBool("haveNote", false);
+		Destroy(transform.GetChild(0));
+	}
 }

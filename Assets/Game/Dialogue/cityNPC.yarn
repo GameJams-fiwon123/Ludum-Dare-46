@@ -1,0 +1,10 @@
+title: cityNPC
+---
+<<if $notes < 7.0 >>
+    Player: Hey.
+    cityNPC: Oh! Hi. 
+    cityNPC: That's the tower where the notes that make up this beautiful melody are.
+<<else>>
+    cityNPC: I miss that beautiful song. What happened?
+<<endif>>
+===

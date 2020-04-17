@@ -10,6 +10,13 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager instance;
 
+	public bool completedDesert = false;
+	public bool completedIce = false;
+	public bool completedGrass1 = false;
+	public bool completedGrass2 = false;
+	public bool completedCave = false;
+
+
 	// Start is called before the first frame update
 	void Awake() {
 		if (FindObjectsOfType<GameManager>().Length > 1) {
