@@ -63,4 +63,8 @@ public class LevelManager : MonoBehaviour
 	public void LoadTowerFloor2() {
 		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "TowerFloor2"));
 	}
+
+	public void LoadCave() {
+		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "Cave"));
+	}
 }

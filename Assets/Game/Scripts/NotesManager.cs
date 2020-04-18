@@ -22,7 +22,8 @@ public class NotesManager : MonoBehaviour
 				if (!note.isPlayer)
 					note.gameObject.SetActive(true);
 			} else {
-				note.gameObject.SetActive(false);
+				if (note)
+					note.gameObject.SetActive(false);
 			}
 		}
 	}

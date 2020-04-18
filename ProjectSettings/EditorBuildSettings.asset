@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Scenes/MainMenu.unity
-    guid: 6b7c39862e6a57e46a99af6e93f343c2
-  - enabled: 1
     path: Assets/Game/Scenes/Places/House1.unity
     guid: 30ea1ae66a2522747b0ee8da6d4df73d
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu.unity
+    guid: 6b7c39862e6a57e46a99af6e93f343c2
   - enabled: 1
     path: Assets/Game/Scenes/Places/City.unity
     guid: 7883ea62d2aed2b41b54ff5ac820e804
@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/Places/PostOffice.unity
     guid: b629c6a68a4302441a9868fe3a3c1014
+  - enabled: 1
+    path: Assets/Game/Scenes/Places/Cave.unity
+    guid: b1d185619ca097e4c964292503f72056
   - enabled: 1
     path: Assets/Game/Scenes/Places/Ice.unity
     guid: b359e590a6e0e9e4783698640644ed9b

@@ -1,6 +1,6 @@
 title: IceNPC
 ---
-<<if $IceNote is false >>
+<<if $iceNote is false >>
     IceNPC: Soon this lake will freeze. I need to hurry.
 <<else>>
     IceNPC: It's frozen. Everything down there will be stuck for months.

@@ -2,14 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DesertBackground : MonoBehaviour
+public class IceBackground : MonoBehaviour
 {
-
 	public Sprite nextBackground;
-	public GameObject holeObject;
-
-	public GameObject desertNpc;
-	public Transform newPosition;
+	public GameObject lakeObject;
 
 	SpriteRenderer sprRenderer;
 
@@ -17,10 +13,9 @@ public class DesertBackground : MonoBehaviour
 	// Start is called before the first frame update
 	void Start() {
 		sprRenderer = GetComponent<SpriteRenderer>();
-		if (GameManager.instance.completedDesert) {
+		if (GameManager.instance.completedIce) {
 			sprRenderer.sprite = nextBackground;
-			Destroy(holeObject);
-			desertNpc.transform.position = newPosition.position;
+			Destroy(lakeObject);
 		}
 	}
 }
