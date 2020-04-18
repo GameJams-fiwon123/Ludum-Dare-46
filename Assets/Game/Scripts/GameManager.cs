@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
 	public bool completedDesert = false;
 	public bool completedIce = false;
 	public bool completedGrass1 = false;
-	public bool completedGrass2 = false;
 	public bool completedCave = false;
+	public bool completedForest = false;
 
 
 	// Start is called before the first frame update

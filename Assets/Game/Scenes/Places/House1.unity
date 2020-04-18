@@ -314,25 +314,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &316996340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2924885008371789709, guid: 952a0d39e3c11f344883cf313da556be,
-    type: 3}
-  m_PrefabInstance: {fileID: 1560057905}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &316996341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316996340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: 0
 --- !u!1001 &408200837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1157,21 +1138,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
-        type: 3}
-      propertyPath: orthographic size
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
-        type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952a0d39e3c11f344883cf313da556be, type: 3}

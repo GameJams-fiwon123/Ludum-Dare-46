@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
 					FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Pegar");
 				}
 			}else if (objInteract.tag == "NPC"){
+				Debug.Log(objInteract.GetComponent<NPC>().talkToNode);
 				FindObjectOfType<DialogueRunner>().StartDialogue(objInteract.GetComponent<NPC>().talkToNode);
 			}
 		} else if (Input.GetKeyDown(KeyCode.X)) {

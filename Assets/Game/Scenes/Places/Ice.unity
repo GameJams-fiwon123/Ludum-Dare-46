@@ -1025,26 +1025,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[3].name
-      value: iceNote
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[3].value
-      value: false
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[3].type
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7089212669239875487, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
       propertyPath: m_AnchorMin.y

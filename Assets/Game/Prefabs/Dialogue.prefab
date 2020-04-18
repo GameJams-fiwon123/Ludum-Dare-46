@@ -935,6 +935,9 @@ MonoBehaviour:
   - name: completedDesert
     value: false
     type: 2
+  - name: iceNote
+    value: false
+    type: 2
   debugTextView: {fileID: 0}
 --- !u!1 &7089212669192414609
 GameObject:

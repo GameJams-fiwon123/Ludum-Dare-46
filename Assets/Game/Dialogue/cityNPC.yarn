@@ -1,10 +1,10 @@
-title: cityNPC
+title: CityNPC
 ---
 <<if $notes < 7.0 >>
     Player: Hey.
-    cityNPC: Oh! Hi. 
-    cityNPC: That's the tower where the notes that make up this beautiful melody are.
+    CityNPC: Oh! Hi. 
+    CityNPC: That's the tower where the notes that make up this beautiful melody are.
 <<else>>
-    cityNPC: I miss that beautiful song. What happened?
+    CityNPC: I miss that beautiful song. What happened?
 <<endif>>
 ===

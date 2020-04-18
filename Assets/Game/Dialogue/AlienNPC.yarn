@@ -1,0 +1,8 @@
+title: AlienNPC
+---
+<<if $forestNote is false >>
+    AlienNPC: I always take an Earth Souvenir to my planet. What will I take this time?
+<<else>>
+    AlienNPC: Oh, this is unique. Thank you!
+<<endif>>
+===

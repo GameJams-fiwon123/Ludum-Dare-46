@@ -1026,7 +1026,7 @@ PrefabInstance:
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.49
+      value: -1.26
       objectReference: {fileID: 0}
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
@@ -1451,7 +1451,7 @@ GameObject:
   - component: {fileID: 1707548548}
   - component: {fileID: 1707548547}
   m_Layer: 0
-  m_Name: cityNPC
+  m_Name: CityNPC
   m_TagString: NPC
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1484,8 +1484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: cityNPC
-  talkToNode: cityNPC
+  characterName: CityNPC
+  talkToNode: CityNPC
   scriptToLoad: {fileID: 11400000, guid: 6255626be091f114480029fe26159ab5, type: 3}
 --- !u!61 &1707548548
 BoxCollider2D:
@@ -1892,10 +1892,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082846, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
-      propertyPath: onNodeComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      propertyPath: defaultVariables.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7089212669239875487, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
