@@ -5,8 +5,6 @@ using UnityEngine;
 public class OVNI : MonoBehaviour
 {
 
-	public Sprite nextSprite;
-
 	Animator anim;
 
 	private void Start() {

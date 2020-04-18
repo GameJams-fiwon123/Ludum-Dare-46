@@ -7,13 +7,18 @@ public class NotesManager : MonoBehaviour
 {
 	public Note[] notes;
 
-	private void Start() {
+	private void Awake() {
 		if (FindObjectsOfType<NotesManager>().Length > 1) {
 			Destroy(gameObject);
 		} else {
 			DontDestroyOnLoad(gameObject);
-			SceneManager.sceneLoaded += OnSceneLoaded;
 		}
+	}
+
+	private void Start() {
+		SceneManager.sceneLoaded += OnSceneLoaded;
+		OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Additive);
+
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {

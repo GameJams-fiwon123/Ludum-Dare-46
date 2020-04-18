@@ -1,0 +1,28 @@
+title: HomelessNPC
+---
+HomelessNPC: I am very poor. Do you have anything to donate to me?
+
+[[Yes|HomelessNPC.Yes]]
+[[No|HomelessNPC.No]]
+
+===
+title: HomelessNPC.Yes
+---
+
+<<verifyPlayer HomelessNPC>>
+
+<<if $answer is false >>
+    HomelessNPC: Why do you lie?
+<<else>>
+    <<if $completedHomeless is true and $answer is true and $isFirstTime is false>>
+        HomelessNPC: You already gave me something, don't worry!
+    <<else>>
+        HomelessNPC: Thank you! They say that "Don't look a gift horse in the mouth", but what will I do with it?
+        <<set $isFirstTime to false>>
+    <<endif>>
+ <<endif>>
+===
+title: HomelessNPC.No
+---
+HomelessNPC: Ok, no problem...
+===

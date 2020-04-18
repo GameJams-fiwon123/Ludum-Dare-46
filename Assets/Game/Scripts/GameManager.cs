@@ -12,9 +12,11 @@ public class GameManager : MonoBehaviour
 
 	public bool completedDesert = false;
 	public bool completedIce = false;
-	public bool completedGrass1 = false;
+	public bool completedHomeless = false;
 	public bool completedCave = false;
 	public bool completedForest = false;
+	public bool completedPostOffice = false;
+	public bool completedFutureGuy = false;
 
 	public bool gameStarted = false;
 

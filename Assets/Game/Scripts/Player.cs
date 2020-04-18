@@ -8,6 +8,8 @@ using Yarn.Unity.Example;
 public class Player : MonoBehaviour
 {
 
+	public bool automaticStart = false;
+
 	public float speed = 100f;
 
 	Rigidbody2D rbd2D;
@@ -35,7 +37,12 @@ public class Player : MonoBehaviour
 		rbd2D = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		sprRenderer = GetComponent<SpriteRenderer>();
-		FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
+
+		if (automaticStart) {
+			WakeUp();
+		} else {
+			FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
+		}
 	}
 
 	// Update is called once per frame

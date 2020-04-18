@@ -1,0 +1,8 @@
+title: PostOfficeNPC
+---
+<<if $completedPostOffice is false  >>
+    PostOfficeNPC: We work hard at the post office. We need to send all these boxes very far by the end of the day.
+<<else>>
+    PostOfficeNPC: Mission completed! And I still found a prize under the boxes.
+<<endif>>
+===

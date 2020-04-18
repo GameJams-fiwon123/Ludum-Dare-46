@@ -1,0 +1,8 @@
+title: NeightborNPC
+---
+<<if $completedAll is false  >>
+    NeightborNPC: I'm single. I don't need to give satisfaction to anyone, I don't need to have anything and I can stay in my pajamas all day listening this wonderful song.
+<<else>>
+    NeightborNPC: I am feeling a great emptiness in my life right now ...
+<<endif>>
+===
