@@ -35,13 +35,16 @@ public class Player : MonoBehaviour
 		rbd2D = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		sprRenderer = GetComponent<SpriteRenderer>();
+		FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 	}
 
 	// Update is called once per frame
 	void Update() {
-		InputMovement();
-		InputInteraction();
-		Animation();
+		if (GameManager.instance.gameStarted) {
+			InputMovement();
+			InputInteraction();
+			Animation();
+		}
 	}
 
 	private void InputInteraction() {
@@ -125,5 +128,10 @@ public class Player : MonoBehaviour
 		anim.SetBool("haveNote", false);
 		transform.GetChild(0).gameObject.SetActive(true);
 		Destroy(transform.GetChild(0).gameObject);
+	}
+
+	public void WakeUp() {
+		anim.Play("Idle-Down");
+		GameManager.instance.StartGame();
 	}
 }

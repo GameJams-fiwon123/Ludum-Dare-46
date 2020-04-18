@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 	public bool completedCave = false;
 	public bool completedForest = false;
 
+	public bool gameStarted = false;
+
 
 	// Start is called before the first frame update
 	void Awake() {
@@ -33,6 +35,10 @@ public class GameManager : MonoBehaviour
 
 	public void SavePlayerPosition(float xValue, float yValue) {
 		nextPositionPlayer = new Vector3(xValue, yValue, 0f);
+	}
+
+	public void StartGame() {
+		gameStarted = true;
 	}
 
 }
