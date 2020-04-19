@@ -16,6 +16,10 @@ public class LevelManager : MonoBehaviour
 		SceneManager.LoadScene("MainMenu");
 	}
 
+	public void LoadHouse1Normal() {
+		SceneManager.LoadScene("House1");
+	}
+
 	public void LoadHouse1() {
 		StartCoroutine(LoadScene(SceneManager.GetActiveScene().name, "House1"));
 	}
