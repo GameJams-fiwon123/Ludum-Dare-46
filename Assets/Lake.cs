@@ -13,7 +13,8 @@ public class Lake : MonoBehaviour
 			if (Player.instance.HasNote()) {
 				GameManager.instance.completedIce = true;
 				Player.instance.DestroyNote();
-			} else {
+				FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Splash");
+	} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}
 		}

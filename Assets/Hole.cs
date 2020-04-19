@@ -14,7 +14,8 @@ public class Hole : MonoBehaviour
 			if (Player.instance.HasNote()) {
 				GameManager.instance.completedDesert = true;
 				Player.instance.DestroyNote();
-			}else {
+				FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Buraco");
+			} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}
 		}

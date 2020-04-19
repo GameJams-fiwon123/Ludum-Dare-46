@@ -10,14 +10,15 @@ public class CaveBackground : MonoBehaviour
 	bool canInteract = false;
 
 	Animator anim;
+	public GameObject roncoObject;
 
 	private void Start() {
 
 		anim = GetComponent<Animator>();
 
 		if (GameManager.instance.completedCave) {
-			Debug.Log("Alterou");
 			anim.Play("Finished");
+			SleepPacMan();
 		}
 	}
 
@@ -33,5 +34,13 @@ public class CaveBackground : MonoBehaviour
 			anim.Play("Start");
 		}
 
+	}
+
+	public void NhacPacMan() {
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Nhac Pac Man");
+	}
+
+	public void SleepPacMan() {
+		roncoObject.SetActive(true);
 	}
 }

@@ -24,6 +24,7 @@ public class OVNI : MonoBehaviour
 
 	public void GoBackHome() {
 		if (GameManager.instance.completedForest) {
+			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/GoodByeHuman");
 			anim.Play("Start");
 		}
 

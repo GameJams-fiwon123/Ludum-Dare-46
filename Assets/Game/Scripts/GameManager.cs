@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
 	public bool completedForest = false;
 	public bool completedPostOffice = false;
 	public bool completedFutureGuy = false;
+	public bool completedAll = false;
+
+	public bool spawnCar = false;
 
 	public bool gameStarted = false;
 
