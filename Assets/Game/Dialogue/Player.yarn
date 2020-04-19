@@ -1,6 +1,6 @@
 title: Player
 ---
 <<if $completedIce is false  >>
-    Player: What the hell! I worked all night and now I can't sleep because of that damn song. I need to do something about it.
+    Elke: What the hell! I worked all night and now I can't sleep because of that damn song. I need to do something about it.
 <<endif>>
 ===

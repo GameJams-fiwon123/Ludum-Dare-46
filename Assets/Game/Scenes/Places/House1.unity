@@ -404,7 +404,7 @@ PrefabInstance:
     - target: {fileID: 6836526316510323005, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
       propertyPath: automaticStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
@@ -1075,34 +1075,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &774655160 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836526316510322993, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
-    type: 3}
-  m_PrefabInstance: {fileID: 497373430}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &774655161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774655160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Player
-  talkToNode: Player
-  scriptToLoad: {fileID: 11400000, guid: 48986e47260a3534e95d6be9b2b1b42c, type: 3}
 --- !u!114 &774655164 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6836526316510323005, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
     type: 3}
   m_PrefabInstance: {fileID: 497373430}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774655160}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c43fc7fe64ab7d940b34c9c4e32276af, type: 3}

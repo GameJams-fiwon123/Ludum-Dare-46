@@ -1,8 +1,8 @@
 title: DesertNPC
 ---
 <<if $desertNote is false >>
-    cityNPC: I spent days digging for treasure and all I got was this huge hole. It's better cover it up before I get in trouble.
+    Furo: I spent days digging for treasure and all I got was this huge hole. It's better cover it up before I get in trouble.
 <<else>>
-    cityNPC: It took some work, but the hole is completely covered.
+    Furo: It took some work, but the hole is completely covered.
 <<endif>>
 ===

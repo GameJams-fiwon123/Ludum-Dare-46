@@ -1,6 +1,6 @@
 title: Hole
 ---
 <<if $completedDesert is false >>
-    Player: A hole... 
+    Elke: A hole... 
 <<endif>>
 ===

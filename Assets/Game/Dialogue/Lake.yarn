@@ -1,6 +1,6 @@
 title: Lake
 ---
 <<if $completedIce is false  >>
-    Player: A lake...
+    Elke: A lake...
 <<endif>>
 ===

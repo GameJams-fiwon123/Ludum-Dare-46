@@ -75,7 +75,14 @@ public class Grass1Background : MonoBehaviour
 	}
 
 	public void PutNoteInCar() {
-		if (Player.instance.HasNote()) {
+		if (!GameManager.instance.completedAll &&
+				GameManager.instance.completedCave &&
+				GameManager.instance.completedDesert &&
+				GameManager.instance.completedForest &&
+				GameManager.instance.completedHomeless &&
+				GameManager.instance.completedIce &&
+				GameManager.instance.completedPostOffice &&
+				Player.instance.HasNote() ) {
 
 			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
 			varStore.SetValue("$completedFutureGuy", true);

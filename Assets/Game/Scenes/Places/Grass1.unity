@@ -513,32 +513,32 @@ PrefabInstance:
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedIce
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedDesert
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedHomeless
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedCave
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedForest
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: completedPostOffice
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
@@ -807,6 +807,21 @@ PrefabInstance:
     - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
       propertyPath: defaultVariables.Array.data[6].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: defaultVariables.Array.data[4].name
+      value: isFirstTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: defaultVariables.Array.data[4].value
+      value: True
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: defaultVariables.Array.data[4].type
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7089212668984082841, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,

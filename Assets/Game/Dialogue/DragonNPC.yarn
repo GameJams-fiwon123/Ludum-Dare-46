@@ -1,8 +1,8 @@
 title: DragonNPC
 ---
 <<if $completedCave is false  >>
-    DragonNPC: Wakka Wakka! I'm very hungry. If you don't bring me something to eat I'll have to eat you.
+    Monster: Wakka Wakka! I'm very hungry. If you don't bring me something to eat I'll have to eat you.
 <<else>>
-    DragonNPC: Thank you! Now I can do the second best thing in life.
+    Monster: Thank you! Now I can do the second best thing in life.
 <<endif>>
 ===

@@ -1,8 +1,8 @@
 title: IceNPC
 ---
 <<if $iceNote is false >>
-    IceNPC: Soon this lake will freeze. I need to hurry.
+    Fogo: Soon this lake will freeze. I need to hurry.
 <<else>>
-    IceNPC: It's frozen. Everything down there will be stuck for months.
+    Fogo: It's frozen. Everything down there will be stuck for months.
 <<endif>>
 ===
