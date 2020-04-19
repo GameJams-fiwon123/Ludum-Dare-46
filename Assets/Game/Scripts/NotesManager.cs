@@ -17,13 +17,21 @@ public class NotesManager : MonoBehaviour
 
 	private void Start() {
 		SceneManager.sceneLoaded += OnSceneLoaded;
-		OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Additive);
-
+		StartCoroutine(VerifyNotes());
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+		StartCoroutine(VerifyNotes());
+	}
+
+	IEnumerator VerifyNotes() {
+		yield return new WaitForEndOfFrame();
+		yield return new WaitForEndOfFrame();
+
+		TeleportManager.placesName currentPlace = FindObjectOfType<TeleportManager>().currentPlace;
+
 		foreach (Note note in notes) {
-			if (note.placeName == FindObjectOfType<TeleportManager>().currentPlace) {
+			if (note.placeName == currentPlace) {
 				if (!note.isPlayer)
 					note.gameObject.SetActive(true);
 			} else {

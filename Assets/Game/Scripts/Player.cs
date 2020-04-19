@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
 	}
 
 	// Start is called before the first frame update
-	void Start() {
+	IEnumerator Start() {
 		rbd2D = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		sprRenderer = GetComponent<SpriteRenderer>();
@@ -41,6 +41,8 @@ public class Player : MonoBehaviour
 		if (automaticStart) {
 			WakeUp();
 		} else {
+			yield return new WaitForEndOfFrame();
+			yield return new WaitForEndOfFrame();
 			FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 		}
 	}

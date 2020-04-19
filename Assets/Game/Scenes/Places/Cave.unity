@@ -261,6 +261,12 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!20 &59570661 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+    type: 3}
+  m_PrefabInstance: {fileID: 1992636156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1123068849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -393,6 +399,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7089212668788616911, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 59570661}
     - target: {fileID: 7089212668854274283, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
       propertyPath: m_AnchorMin.y

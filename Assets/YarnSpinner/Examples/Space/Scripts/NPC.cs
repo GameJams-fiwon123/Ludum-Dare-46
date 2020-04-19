@@ -24,6 +24,7 @@ SOFTWARE.
 
 */
 
+using System.Collections;
 using UnityEngine;
 
 namespace Yarn.Unity.Example
@@ -41,8 +42,11 @@ namespace Yarn.Unity.Example
 		[Header("Optional")]
 		public YarnProgram scriptToLoad;
 
-		void Start() {
+
+		IEnumerator Start() {
 			if (scriptToLoad != null) {
+				yield return new WaitForEndOfFrame();
+				yield return new WaitForEndOfFrame();
 				DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
 				dialogueRunner.Add(scriptToLoad);
 			}

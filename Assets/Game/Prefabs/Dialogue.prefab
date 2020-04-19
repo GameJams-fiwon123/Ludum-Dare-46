@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4786614289279648091}
-  - component: {fileID: 3459252876660761181}
   - component: {fileID: 1777366920}
   m_Layer: 0
   m_Name: Dialogue
@@ -35,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3459252876660761181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609242665785016893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3414bb16e3354487c869122a1d6b873e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 7089212668984082846}
 --- !u!114 &1777366920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +569,7 @@ Canvas:
   m_GameObject: {fileID: 7089212668788616907}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -592,7 +578,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1213251999
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1853737043835615802
@@ -610,7 +596,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 700, y: 700}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -764,18 +750,7 @@ MonoBehaviour:
   startAutomatically: 0
   onNodeComplete:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3459252876660761181}
-        m_MethodName: NodeComplete
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDialogueComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -947,22 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultVariables:
-  - name: notes
-    value: 0
-    type: 0
-  - name: desertNote
-    value: false
-    type: 2
-  - name: completedDesert
-    value: false
-    type: 2
-  - name: iceNote
-    value: false
-    type: 2
-  - name: isFirstTime
-    value: true
-    type: 2
+  defaultVariables: []
   debugTextView: {fileID: 0}
 --- !u!1 &7089212669192414609
 GameObject:
