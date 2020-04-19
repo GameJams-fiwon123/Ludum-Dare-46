@@ -9,6 +9,8 @@ public class PlayerHouseBackground : MonoBehaviour
 	public void FinishGame() {
 		if (GameManager.instance.completedAll) {
 			anim.Play("Start");
+			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Shhh (Thanks for Playing)");
 		}
 	}
+
 }

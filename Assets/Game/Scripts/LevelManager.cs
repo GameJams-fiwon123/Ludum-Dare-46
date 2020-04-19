@@ -12,6 +12,10 @@ public class LevelManager : MonoBehaviour
 		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 	}
 
+	public void LoadDoctor() {
+		SceneManager.LoadScene("Doctor");
+	}
+
 	public void LoadMainMenu() {
 		Destroy(GameManager.instance.gameObject);
 		Destroy(Player.instance.gameObject);

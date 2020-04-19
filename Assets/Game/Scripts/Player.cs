@@ -43,7 +43,6 @@ public class Player : MonoBehaviour
 		} else {
 			yield return new WaitForEndOfFrame();
 			yield return new WaitForEndOfFrame();
-			FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 		}
 	}
 
@@ -87,7 +86,12 @@ public class Player : MonoBehaviour
 	private void Animation() {
 		if (motion.x != 0 || motion.y != 0) {
 			anim.SetBool("isWalking", true);
-			sprRenderer.flipX = motion.x == 1f ? false : true;
+			//sprRenderer.flipX = ((motion.x == 1f) ? false : true);
+			if (motion.x != 0) {
+				transform.localScale = new Vector3(motion.x, 1, 1);
+			} else {
+				transform.localScale = new Vector3(1, 1, 1);
+			}
 		} else {
 			anim.SetBool("isWalking", false);
 		}
@@ -143,8 +147,36 @@ public class Player : MonoBehaviour
 		Destroy(transform.GetChild(0).gameObject);
 	}
 
+	public void DialogueWakeUp() {
+			FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
+
+	}
+
 	public void WakeUp() {
-		anim.Play("Idle-Down");
-		GameManager.instance.StartGame();
+		if (!GameManager.instance.isFinished) {
+			anim.Play("Idle-Down");
+			GameManager.instance.StartGame();
+		}
+	}
+
+	public void GoSleep(Vector3 dest) {
+		StartCoroutine(CoroutineSleep(dest));
+	}
+
+	IEnumerator CoroutineSleep(Vector3 dest) {
+
+		Vector3 dir = dest - transform.position;
+		dir = dir.normalized;
+
+		while (Vector2.Distance(dest, transform.position) > 0.1f) {
+			transform.position += dir * Time.deltaTime;
+			yield return new WaitForSeconds(0.01f);
+		}
+
+		anim.Play("Sleeping");
+	}
+
+	public void ThankYou() {
+		FindObjectOfType<DialogueRunner>().StartDialogue("Player.Sleep");
 	}
 }

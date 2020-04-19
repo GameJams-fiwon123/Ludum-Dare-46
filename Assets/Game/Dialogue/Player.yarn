@@ -1,10 +1,15 @@
 title: Player
 ---
 <<if $completedIce is false  >>
-    Elke: What the hell! I worked all night and now I can't sleep because of that damn song. I need to do something about it.
+    Elke: This damn song won't let me sleep
+    Elke: I need to find a way. My health depends on it.
 <<endif>>
 ===
 title: Player.Sleep
 ---
-Elke: Ah ... Silence ... now I can sle... ZZZZ
+Elke: Finally silence!
+Elke: Now I can sleep...
+Elke: I'm too young to die...
+Elke: tired...
+Elke: ZZZ
 ===

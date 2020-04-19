@@ -537,7 +537,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1967384873}
-        m_MethodName: LoadHouse1Normal
+        m_MethodName: LoadDoctor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

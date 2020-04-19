@@ -510,6 +510,11 @@ PrefabInstance:
       propertyPath: completedAll
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4721470694209702977, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
+        type: 3}
+      propertyPath: gameStarted
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6231617997843070189, guid: 498367a6e0ae3a24fa4c0ad471a69c1f,
         type: 3}
       propertyPath: m_Name
@@ -666,6 +671,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 856a6641af790fa4eae47d0808472948,
         type: 3}
+    - target: {fileID: 6836526316510322992, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6836526316510322993, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
       propertyPath: m_Name
@@ -684,7 +694,7 @@ PrefabInstance:
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.34
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
@@ -1114,6 +1124,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7089212668788616911, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1560057906}
     - target: {fileID: 7089212668854274283, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1203,6 +1218,16 @@ PrefabInstance:
         type: 3}
       propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089212668984082841, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089212668984082841, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+        type: 3}
+      propertyPath: onDialogueEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7089212669239875487, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
@@ -2276,6 +2301,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 952a0d39e3c11f344883cf313da556be, type: 3}
+--- !u!20 &1560057906 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
+    type: 3}
+  m_PrefabInstance: {fileID: 1560057905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1642463601
 GameObject:
   m_ObjectHideFlags: 0

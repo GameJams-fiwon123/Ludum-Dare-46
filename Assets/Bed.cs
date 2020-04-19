@@ -9,7 +9,8 @@ public class Bed : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.tag == "Player" && GameManager.instance.completedAll) {
 			GameManager.instance.gameStarted = false;
-			FindObjectOfType<DialogueRunner>().StartDialogue("Player.Sleep");
+			Player.instance.GoSleep(transform.position);
+			GameManager.instance.isFinished = true;
 		}
 	}
 }

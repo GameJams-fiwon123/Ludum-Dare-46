@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
 	public bool spawnCar = false;
 
 	public bool gameStarted = false;
+	public bool isFinished = false;
 
 
 	// Start is called before the first frame update
