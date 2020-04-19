@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
 					objInteract = null;
 					FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Pegar");
 				}
-			}else if (objInteract.tag == "NPC"){
+			} else if (objInteract.tag == "NPC") {
 				FindObjectOfType<DialogueRunner>().StartDialogue(objInteract.GetComponent<NPC>().talkToNode);
 			}
 		} else if (Input.GetKeyDown(KeyCode.X)) {
@@ -103,7 +103,12 @@ public class Player : MonoBehaviour
 
 	// Physic
 	void FixedUpdate() {
-		Movement();
+		if (GameManager.instance.gameStarted) {
+			Movement();
+		} else {
+			rbd2D.velocity = Vector2.zero;
+			anim.SetBool("isWalking", false);
+		}
 	}
 
 	private void Movement() {
@@ -118,7 +123,7 @@ public class Player : MonoBehaviour
 		if (collision.tag == "Note" || collision.tag == "NPC") {
 			canInteract = true;
 			objInteract = collision.gameObject;
-		} 
+		}
 	}
 
 	private void OnTriggerExit2D(Collider2D collision) {
