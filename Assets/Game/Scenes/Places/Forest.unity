@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 333178201}
   - component: {fileID: 333178200}
   - component: {fileID: 333178203}
+  - component: {fileID: 333178204}
   m_Layer: 0
   m_Name: AlienNPC
   m_TagString: NPC
@@ -852,6 +853,25 @@ MonoBehaviour:
   characterName: AlienNPC
   talkToNode: AlienNPC
   scriptToLoad: {fileID: 11400000, guid: cc9c219ce870d5e43925d1dc59bca00f, type: 3}
+--- !u!95 &333178204
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333178199}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 291e0609c4778104e81d2929e5c1005f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &388997089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc25500eea0118438c15906a38fcf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alienAnim: {fileID: 333178204}
 --- !u!95 &468770319
 Animator:
   serializedVersion: 3

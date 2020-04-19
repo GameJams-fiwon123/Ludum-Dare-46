@@ -1,6 +1,6 @@
 title: CityNPC
 ---
-<<if $notes < 7.0 >>
+<<if $completedAll is false >>
     Elke: Hey.
     Japa: Oh! Hi. 
     Japa: That's the tower where the notes that make up this beautiful melody are.

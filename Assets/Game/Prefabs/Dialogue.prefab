@@ -922,7 +922,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultVariables: []
+  defaultVariables:
+  - name: completedPostOffice
+    value: false
+    type: 2
+  - name: completedAll
+    value: false
+    type: 2
+  - name: desertNote
+    value: false
+    type: 2
+  - name: forestNote
+    value: false
+    type: 2
+  - name: completedFutureGuy
+    value: false
+    type: 2
+  - name: completedCave
+    value: false
+    type: 2
+  - name: answer
+    value: false
+    type: 2
+  - name: isFirstTime
+    value: true
+    type: 2
+  - name: iceNote
+    value: false
+    type: 2
+  - name: completedHomeless
+    value: false
+    type: 2
   debugTextView: {fileID: 0}
 --- !u!1 &7089212669192414609
 GameObject:

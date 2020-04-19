@@ -74,24 +74,6 @@ public class Grass1Background : MonoBehaviour
 		instancePortal1.GetComponent<Animator>().Play("Close");
 	}
 
-	public void PutNoteInCar() {
-		if (!GameManager.instance.completedAll &&
-				GameManager.instance.completedCave &&
-				GameManager.instance.completedDesert &&
-				GameManager.instance.completedForest &&
-				GameManager.instance.completedHomeless &&
-				GameManager.instance.completedIce &&
-				GameManager.instance.completedPostOffice &&
-				Player.instance.HasNote() ) {
-
-			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
-			varStore.SetValue("$completedFutureGuy", true);
-
-			GameManager.instance.completedFutureGuy = true;
-			Player.instance.DestroyNote();
-		}
-	}
-
 	public void ByeCar() {
 		if (GameManager.instance.completedFutureGuy) {
 			GameManager.instance.completedAll = true;

@@ -1,9 +1,7 @@
 title: Player
 ---
-<<if $completedIce is false  >>
-    Elke: This damn song won't let me sleep
-    Elke: I need to find a way. My health depends on it.
-<<endif>>
+Elke: This damn song won't let me sleep
+Elke: I need to find a way. My health depends on it.
 ===
 title: Player.Sleep
 ---

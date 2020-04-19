@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn;
 using Yarn.Unity;
 using Yarn.Unity.Example;
 
@@ -24,6 +25,9 @@ public class Box : MonoBehaviour
 				Player.instance.DestroyNote();
 				sprRenderer.sprite = nextSprite;
 				boxCol.size = new Vector2(0.6366018f, 0.6470239f);
+
+				VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
+				varStore.SetValue("$completedPostOffice", true);
 			} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}

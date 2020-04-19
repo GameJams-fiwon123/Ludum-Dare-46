@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn;
+using Yarn.Unity;
 
 public class OVNI : MonoBehaviour
 {
 
 	Animator anim;
+	public Animator alienAnim;
 
 	private void Start() {
 		if (GameManager.instance.completedForest) {
@@ -18,6 +21,10 @@ public class OVNI : MonoBehaviour
 	public void VerifyPlayer() {
 		if (Player.instance.HasNote()) {
 			GameManager.instance.completedForest = true;
+
+			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
+			varStore.SetValue("$forestNote", true);
+
 			Player.instance.DestroyNote();
 		}
 	}
@@ -26,6 +33,7 @@ public class OVNI : MonoBehaviour
 		if (GameManager.instance.completedForest) {
 			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/GoodByeHuman");
 			anim.Play("Start");
+			alienAnim.Play("Walking");
 		}
 
 	}

@@ -774,55 +774,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
+    - target: {fileID: 7089212668984082841, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}
-      propertyPath: defaultVariables.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[5].name
-      value: answer
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[5].value
-      value: false
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[5].type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[6].name
-      value: completedHomeless
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[6].value
-      value: false
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[6].type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[4].name
-      value: isFirstTime
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[4].value
-      value: True
-      objectReference: {fileID: 0}
-    - target: {fileID: 7089212668984082840, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
-        type: 3}
-      propertyPath: defaultVariables.Array.data[4].type
-      value: 2
+      propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7089212668984082841, guid: cb6e52df7cd2d83448e5b7c75faa6ddc,
         type: 3}

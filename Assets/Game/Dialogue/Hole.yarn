@@ -1,6 +1,4 @@
 title: Hole
 ---
-<<if $completedDesert is false >>
-    Elke: A hole... 
-<<endif>>
+Elke: A hole... 
 ===

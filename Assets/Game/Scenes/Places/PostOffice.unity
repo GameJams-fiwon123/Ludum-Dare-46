@@ -781,7 +781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: PostOfficeNPC
   talkToNode: PostOfficeNPC
-  scriptToLoad: {fileID: 11400000, guid: cd08fc0c582b1444496d1e47282f0a14, type: 3}
+  scriptToLoad: {fileID: 11400000, guid: ad3a68b50a12a164f8a22155b3175e81, type: 3}
 --- !u!1 &652164283
 GameObject:
   m_ObjectHideFlags: 0
