@@ -18,6 +18,7 @@ public class Car : MonoBehaviour
 				varStore.SetValue("$completedAll", true);
 
 				GameManager.instance.completedFutureGuy = true;
+				GameManager.instance.completedAll = true;
 				Player.instance.DestroyNote();
 			} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);

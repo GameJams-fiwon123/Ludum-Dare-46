@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Yarn;
+using Yarn.Unity;
 
 public class GameManager : MonoBehaviour
 {
+
+	public VariableStorage variableStorage;
+
 	public TeleportManager.placesName currentPlace { get; private set; } = TeleportManager.placesName.None;
 
 	public Vector3 nextPositionPlayer { get; private set; } = Vector3.zero;
@@ -32,6 +38,35 @@ public class GameManager : MonoBehaviour
 		} else {
 			DontDestroyOnLoad(gameObject);
 			instance = this;
+		}
+	}
+
+	private void Start() {
+		SceneManager.sceneLoaded += OnSceneLoaded;
+	}
+
+	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+		StartCoroutine(VerifyDialogues());
+	}
+
+	IEnumerator VerifyDialogues() {
+		yield return new WaitForEndOfFrame();
+		yield return new WaitForEndOfFrame();
+
+		if (FindObjectOfType<DialogueRunner>()) {
+			variableStorage = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
+
+			variableStorage.SetValue("$forestNote", completedForest);
+			variableStorage.SetValue("$iceNote", completedIce);
+			variableStorage.SetValue("$completedHomeless", completedHomeless);
+			if (completedHomeless)
+				variableStorage.SetValue("$isFirstTime", false);
+
+			variableStorage.SetValue("$desertNote", completedDesert);
+			variableStorage.SetValue("$completedCave", completedCave);
+			variableStorage.SetValue("$completedFutureGuy", completedFutureGuy);
+			variableStorage.SetValue("$completedAll", completedAll);
+			variableStorage.SetValue("$completedPostOffice", completedPostOffice);
 		}
 	}
 

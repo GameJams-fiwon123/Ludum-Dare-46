@@ -76,7 +76,6 @@ public class Grass1Background : MonoBehaviour
 
 	public void ByeCar() {
 		if (GameManager.instance.completedFutureGuy) {
-			GameManager.instance.completedAll = true;
 			//Destroy Future Guy
 			Destroy(instanceFutureGuyNPC);
 			// Open Portal

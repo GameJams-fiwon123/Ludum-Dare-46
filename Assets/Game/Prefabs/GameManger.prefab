@@ -43,3 +43,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cec6d3a85190064c8edc59f20fef5ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  completedDesert: 0
+  completedIce: 0
+  completedHomeless: 0
+  completedCave: 0
+  completedForest: 0
+  completedPostOffice: 0
+  completedFutureGuy: 0
+  completedAll: 0
+  spawnCar: 0
+  gameStarted: 0
+  isFinished: 0

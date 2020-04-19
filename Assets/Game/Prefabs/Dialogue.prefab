@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 7089212668984082847}
   - component: {fileID: 7089212668984082846}
   - component: {fileID: 7089212668984082841}
-  - component: {fileID: 7089212668984082840}
+  - component: {fileID: 4325430326817096494}
   m_Layer: 0
   m_Name: Dialogue Runner
   m_TagString: Untagged
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yarnScripts: []
   textLanguage: 
-  variableStorage: {fileID: 7089212668984082840}
+  variableStorage: {fileID: 4325430326817096494}
   dialogueUI: {fileID: 7089212668984082841}
   startNode: 
   startAutomatically: 0
@@ -910,7 +910,7 @@ MonoBehaviour:
   onCommand:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7089212668984082840
+--- !u!114 &4325430326817096494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
