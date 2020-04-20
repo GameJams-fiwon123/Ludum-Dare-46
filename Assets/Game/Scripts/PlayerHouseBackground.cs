@@ -18,11 +18,13 @@ public class PlayerHouseBackground : MonoBehaviour
 	}
 
 	public void GoBackMainMenu() {
-		Destroy(GameManager.instance.gameObject);
 		Destroy(Player.instance.gameObject);
-		Destroy(FindObjectOfType<AudioManager>().gameObject);
-		Destroy(FindObjectOfType<NotesManager>().gameObject);
-		Destroy(FindObjectOfType<SoundsEnvManager>().gameObject);
+		if (FindObjectOfType<AudioManager>())
+			Destroy(FindObjectOfType<AudioManager>().gameObject);
+		if (FindObjectOfType<NotesManager>())
+			Destroy(FindObjectOfType<NotesManager>().gameObject);
+		if (FindObjectOfType<SoundsEnvManager>())
+			Destroy(FindObjectOfType<SoundsEnvManager>().gameObject);
 
 		FindObjectOfType<LevelManager>().LoadMainMenu();
 	}

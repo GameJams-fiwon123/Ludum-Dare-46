@@ -46,6 +46,10 @@ public class GameManager : MonoBehaviour
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
+	private void OnDestroy() {
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
+
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
 		StartCoroutine(VerifyDialogues());
 	}

@@ -18,6 +18,7 @@ public class LevelManager : MonoBehaviour
 
 	public void LoadDoctor() {
 		Destroy(FindObjectOfType<TitleMusic>().gameObject);
+
 		Clique();
 		SceneManager.LoadScene("Doctor");
 	}
