@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
 
 	// Update is called once per frame
 	void Update() {
-		if (GameManager.instance.gameStarted) {
+		if (GameManager.instance.gameStarted && !GameManager.instance.isDialogue) {
 			InputMovement();
 			InputInteraction();
 			Animation();
@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
 
 	// Physic
 	void FixedUpdate() {
-		if (GameManager.instance.gameStarted) {
+		if (GameManager.instance.gameStarted && !GameManager.instance.isDialogue) {
 			Movement();
 		} else {
 			rbd2D.velocity = Vector2.zero;

@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 	public bool gameStarted = false;
 	public bool isFinished = false;
 
+	public bool isDialogue = false;
 
 	// Start is called before the first frame update
 	void Awake() {

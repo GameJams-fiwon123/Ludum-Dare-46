@@ -10,7 +10,7 @@ public class Lake : MonoBehaviour
 	bool canInteract = false;
 
 	private void Update() {
-		if (Input.GetKeyDown(KeyCode.Z) && canInteract) {
+		if (Input.GetKeyDown(KeyCode.Z) && canInteract && !GameManager.instance.isDialogue) {
 			if (Player.instance.HasNote()) {
 				GameManager.instance.completedIce = true;
 				Player.instance.DestroyNote();
