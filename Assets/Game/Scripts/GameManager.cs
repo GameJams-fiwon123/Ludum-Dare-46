@@ -50,8 +50,7 @@ public class GameManager : MonoBehaviour
 	}
 
 	IEnumerator VerifyDialogues() {
-		yield return new WaitForEndOfFrame();
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(0.05f);
 
 		if (FindObjectOfType<DialogueRunner>()) {
 			variableStorage = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();

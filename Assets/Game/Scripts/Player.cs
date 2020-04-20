@@ -41,8 +41,7 @@ public class Player : MonoBehaviour
 		if (automaticStart) {
 			WakeUp();
 		} else {
-			yield return new WaitForEndOfFrame();
-			yield return new WaitForEndOfFrame();
+			yield return new WaitForSeconds(0.05f);
 		}
 	}
 
@@ -177,6 +176,6 @@ public class Player : MonoBehaviour
 	}
 
 	public void ThankYou() {
-		FindObjectOfType<DialogueRunner>().StartDialogue("Player.Sleep");
+		FindObjectOfType<DialogueRunner>().StartDialogue("Bed");
 	}
 }

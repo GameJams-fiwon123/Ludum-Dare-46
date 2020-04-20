@@ -45,8 +45,7 @@ namespace Yarn.Unity.Example
 
 		IEnumerator Start() {
 			if (scriptToLoad != null) {
-				yield return new WaitForEndOfFrame();
-				yield return new WaitForEndOfFrame();
+				yield return new WaitForSeconds(0.05f);
 				DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
 				dialogueRunner.Add(scriptToLoad);
 			}

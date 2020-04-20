@@ -689,7 +689,7 @@ PrefabInstance:
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.28
+      value: -2.26
       objectReference: {fileID: 0}
     - target: {fileID: 6836526316510323007, guid: 19812c6aa2ed4d244a16fc078bdf02a5,
         type: 3}
@@ -2034,6 +2034,7 @@ GameObject:
   - component: {fileID: 1171060676}
   - component: {fileID: 1171060679}
   - component: {fileID: 1171060677}
+  - component: {fileID: 1171060678}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -2083,6 +2084,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1422609, y: 0.81996965}
   m_EdgeRadius: 0
+--- !u!114 &1171060678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171060675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3419b57eb638f44db88701b5b33b8af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Bed
+  talkToNode: Bed
+  scriptToLoad: {fileID: 11400000, guid: b7af76e22dea070459035397cf1def56, type: 3}
 --- !u!114 &1171060679
 MonoBehaviour:
   m_ObjectHideFlags: 0

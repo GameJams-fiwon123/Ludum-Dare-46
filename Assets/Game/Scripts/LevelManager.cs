@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 	IEnumerator LoadScene(string currentScene, string nextScene) {
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(0.01f);
 		SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(0.01f);
 		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 	}
 

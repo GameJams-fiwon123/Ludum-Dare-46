@@ -25,8 +25,7 @@ public class NotesManager : MonoBehaviour
 	}
 
 	IEnumerator VerifyNotes() {
-		yield return new WaitForEndOfFrame();
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(0.05f);
 
 		TeleportManager.placesName currentPlace = FindObjectOfType<TeleportManager>().currentPlace;
 
