@@ -51,11 +51,11 @@ public class Grass1Background : MonoBehaviour
 	IEnumerator SpawnPortal() {
 		// Open Portal
 		yield return new WaitForSeconds(1f);
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
+		yield return new WaitForSeconds(1.25f);
 		instancePortal1 = Instantiate(portalPrefab, transformPortal1.position, Quaternion.identity, transform.parent);
 		instancePortal1.GetComponent<Animator>().Play("Open");
 		StartCoroutine(SpawnCar());
-		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fusca Chegando");
-		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
 	}
 
 	IEnumerator SpawnCar() {
@@ -64,13 +64,20 @@ public class Grass1Background : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 		instanceCar = Instantiate(carPrefab, transformPortal1.position, Quaternion.identity, transform.parent);
 		instanceCar.GetComponent<Animator>().Play("Start");
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fusca Chegando");
 	}
 
 	public void StopCar() {
 		// Spawn NPC
 		instanceFutureGuyNPC = Instantiate(futureGuyNPCPrefab, trasnformFutureGuyNPC.position, Quaternion.identity, transform.parent);
 
+		StartCoroutine(ClosePortal());
+	}
+
+	IEnumerator ClosePortal() {
 		// Close Portal
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
+		yield return new WaitForSeconds(1.25f);
 		instancePortal1.GetComponent<Animator>().Play("Close");
 	}
 
@@ -84,20 +91,32 @@ public class Grass1Background : MonoBehaviour
 			//Destroy Future Guy
 			Destroy(instanceFutureGuyNPC);
 			// Open Portal
-			instancePortal2 = Instantiate(portal2Prefab, transformPortal2.position, Quaternion.identity, transform.parent);
-			instancePortal2.GetComponent<Animator>().Play("Open");
-			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
+			StartCoroutine(OpenPortal2());
 			// Move Car
 			instanceCar.GetComponent<Animator>().Play("Bye");
 			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Fusca saindo");
-
+			StartCoroutine(ClosePorta2());
 		}
+	}
+
+	IEnumerator OpenPortal2() {
+		instancePortal2 = Instantiate(portal2Prefab, transformPortal2.position, Quaternion.identity, transform.parent);
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
+		yield return new WaitForSeconds(1.25f);
+		instancePortal2.GetComponent<Animator>().Play("Open");
+
 	}
 
 	public void DestoryCar() {
 		// Destroy Car
 		Destroy(instanceCar);
+	}
+
+	IEnumerator ClosePorta2() {
 		// Close Portal
+		yield return new WaitForSeconds(6.75f);
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal do Tempo");
+		yield return new WaitForSeconds(1.25f);
 		instancePortal2.GetComponent<Animator>().Play("Close");
 	}
 }

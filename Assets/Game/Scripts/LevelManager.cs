@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour
 		Destroy(GameManager.instance.gameObject);
 		Destroy(Player.instance.gameObject);
 		Destroy(FindObjectOfType<AudioManager>().gameObject);
+		Destroy(FindObjectOfType<NotesManager>().gameObject);
 
 		SceneManager.LoadScene("MainMenu");
 	}

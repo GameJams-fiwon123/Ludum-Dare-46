@@ -13,4 +13,8 @@ public class PlayerHouseBackground : MonoBehaviour
 		}
 	}
 
+	public void BeginGame() {
+		anim.Play("Begin");
+	}
+
 }

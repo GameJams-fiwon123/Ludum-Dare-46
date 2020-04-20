@@ -31,6 +31,8 @@ public class CaveBackground : MonoBehaviour
 
 			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
 			varStore.SetValue("$completedCave", true);
+
+			FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Nhac Pac Man");
 		}
 	}
 
@@ -42,10 +44,6 @@ public class CaveBackground : MonoBehaviour
 			varStore.SetValue("$isFirstCave", false);
 		}
 
-	}
-
-	public void NhacPacMan() {
-		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Nhac Pac Man");
 	}
 
 	public void SleepPacMan() {
