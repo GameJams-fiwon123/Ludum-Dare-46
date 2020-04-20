@@ -43,7 +43,7 @@ public class Grass1Background : MonoBehaviour
 	}
 
 	IEnumerator LoadSpawn() {
-		yield return new WaitForSeconds(0.01f);
+		yield return new WaitForSeconds(0.05f);
 		instanceCar = Instantiate(carPrefab, positionCarStop.position, Quaternion.identity, transform.parent);
 		instanceFutureGuyNPC = Instantiate(futureGuyNPCPrefab, trasnformFutureGuyNPC.position, Quaternion.identity, transform.parent);
 	}
@@ -76,6 +76,11 @@ public class Grass1Background : MonoBehaviour
 
 	public void ByeCar() {
 		if (GameManager.instance.completedFutureGuy) {
+
+			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
+			varStore.SetValue("$completedAll", true);
+			GameManager.instance.completedAll = true;
+
 			//Destroy Future Guy
 			Destroy(instanceFutureGuyNPC);
 			// Open Portal

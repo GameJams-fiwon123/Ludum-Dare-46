@@ -10,17 +10,18 @@ public class Car : MonoBehaviour
 	bool canInteract = false;
 
 	private void Update() {
-		if (Input.GetKeyDown(KeyCode.Z) && canInteract && !GameManager.instance.isDialogue) {
+		if (Input.GetKeyDown(KeyCode.Z) && canInteract && !GameManager.instance.completedAll) {
 			if (Player.instance.HasNote()) {
 
 				VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
 				varStore.SetValue("$completedFutureGuy", true);
-				varStore.SetValue("$completedAll", true);
-
 				GameManager.instance.completedFutureGuy = true;
-				GameManager.instance.completedAll = true;
+
 				Player.instance.DestroyNote();
-			} else {
+				FindObjectOfType<Grass1Background>().ByeCar();
+				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
+
+			} else if (!GameManager.instance.isDialogue && !GameManager.instance.completedAll) {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}
 		}
