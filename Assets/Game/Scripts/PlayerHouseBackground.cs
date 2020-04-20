@@ -17,4 +17,14 @@ public class PlayerHouseBackground : MonoBehaviour
 		anim.Play("Begin");
 	}
 
+	public void GoBackMainMenu() {
+		Destroy(GameManager.instance.gameObject);
+		Destroy(Player.instance.gameObject);
+		Destroy(FindObjectOfType<AudioManager>().gameObject);
+		Destroy(FindObjectOfType<NotesManager>().gameObject);
+		Destroy(FindObjectOfType<SoundsEnvManager>().gameObject);
+
+		FindObjectOfType<LevelManager>().LoadMainMenu();
+	}
+
 }

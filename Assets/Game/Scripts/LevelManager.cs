@@ -17,12 +17,19 @@ public class LevelManager : MonoBehaviour
 	}
 
 	public void LoadMainMenu() {
-		Destroy(GameManager.instance.gameObject);
-		Destroy(Player.instance.gameObject);
-		Destroy(FindObjectOfType<AudioManager>().gameObject);
-		Destroy(FindObjectOfType<NotesManager>().gameObject);
-
 		SceneManager.LoadScene("MainMenu");
+	}
+
+	public void LoadCredtis() {
+		SceneManager.LoadScene("Credits");
+	}
+
+	public void LoadTutorial() {
+		SceneManager.LoadScene("Tutorial");
+	}
+
+	public void ExitGame() {
+		Application.Quit();
 	}
 
 	public void LoadHouse1Normal() {

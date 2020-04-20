@@ -42,6 +42,22 @@ public class Grass1Background : MonoBehaviour
 		}
 	}
 
+
+	public void VerifyQuest() {
+		if (!GameManager.instance.completedAll &&
+				GameManager.instance.completedCave &&
+				GameManager.instance.completedDesert &&
+				GameManager.instance.completedForest &&
+				GameManager.instance.completedHomeless &&
+				GameManager.instance.completedIce &&
+				GameManager.instance.completedPostOffice &&
+				!GameManager.instance.spawnCar) {
+
+			GameManager.instance.spawnCar = true;
+			StartCoroutine(SpawnPortal());
+		}
+	}
+
 	IEnumerator LoadSpawn() {
 		yield return new WaitForSeconds(0.05f);
 		instanceCar = Instantiate(carPrefab, positionCarStop.position, Quaternion.identity, transform.parent);
