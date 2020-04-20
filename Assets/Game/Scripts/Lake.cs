@@ -15,9 +15,6 @@ public class Lake : MonoBehaviour
 				GameManager.instance.completedIce = true;
 				Player.instance.DestroyNote();
 				FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Splash");
-
-				VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
-				varStore.SetValue("$iceNote", true);
 				
 	} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);

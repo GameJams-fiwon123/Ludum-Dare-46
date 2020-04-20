@@ -19,7 +19,7 @@ public class OVNI : MonoBehaviour
 	}
 
 	public void VerifyPlayer() {
-		if (Player.instance.HasNote()) {
+		if (Player.instance.HasNote() && !GameManager.instance.completedForest) {
 			GameManager.instance.completedForest = true;
 
 			VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();

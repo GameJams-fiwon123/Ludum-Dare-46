@@ -61,6 +61,9 @@ public class GameManager : MonoBehaviour
 			if (completedHomeless)
 				variableStorage.SetValue("$isFirstTime", false);
 
+			if (completedCave)
+				variableStorage.SetValue("$isFirstCave", false);
+
 			variableStorage.SetValue("$desertNote", completedDesert);
 			variableStorage.SetValue("$completedCave", completedCave);
 			variableStorage.SetValue("$completedFutureGuy", completedFutureGuy);

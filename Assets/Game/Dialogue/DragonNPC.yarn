@@ -3,6 +3,10 @@ title: DragonNPC
 <<if $completedCave is false  >>
     Monster: Wakka Wakka! I'm very hungry. If you don't bring me something to eat I'll have to eat you.
 <<else>>
-    Monster: Thank you! Now I can do the second best thing in life.
+    <<if $isFirstCave is true>>
+        Monster: Thank you! Now I can do the second best thing in life.
+    <<else>>
+        Monster: ...
+    <<endif>>
 <<endif>>
 ===

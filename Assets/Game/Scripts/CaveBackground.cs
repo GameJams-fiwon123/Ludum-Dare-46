@@ -24,7 +24,7 @@ public class CaveBackground : MonoBehaviour
 	}
 
 	public void VerifyPlayer() {
-		if (Player.instance.HasNote()) {
+		if (Player.instance.HasNote() && !GameManager.instance.completedCave) {
 			GameManager.instance.completedCave = true;
 			Player.instance.DestroyNote();
 
@@ -35,8 +35,11 @@ public class CaveBackground : MonoBehaviour
 	}
 
 	public void ChangeBackground() {
-		if (GameManager.instance.completedCave) {
+		VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
+
+		if (GameManager.instance.completedCave && varStore.GetValue("$isFirstCave").AsBool) {
 			anim.Play("Start");
+			varStore.SetValue("$isFirstCave", false);
 		}
 
 	}

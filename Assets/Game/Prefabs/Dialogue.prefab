@@ -950,6 +950,9 @@ MonoBehaviour:
   - name: iceNote
     value: false
     type: 2
+  - name: isFirstCave
+    value: true
+    type: 2
   - name: completedHomeless
     value: false
     type: 2

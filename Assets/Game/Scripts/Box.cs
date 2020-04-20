@@ -5,20 +5,26 @@ using Yarn;
 using Yarn.Unity;
 using Yarn.Unity.Example;
 
-public class Hole : MonoBehaviour
+public class Box : MonoBehaviour
 {
-
 	bool canInteract = false;
+	public Sprite nextSprite;
+
+	public BoxCollider2D boxCol;
+
+	SpriteRenderer sprRenderer;
+
+	private void Start() {
+		sprRenderer = GetComponent<SpriteRenderer>();
+	}
 
 	private void Update() {
 		if (Input.GetKeyDown(KeyCode.Z) && canInteract) {
 			if (Player.instance.HasNote()) {
-				GameManager.instance.completedDesert = true;
+				GameManager.instance.completedPostOffice = true;
 				Player.instance.DestroyNote();
-				FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Buraco");
-
-				VariableStorage varStore = FindObjectOfType<DialogueRunner>().GetComponent<VariableStorage>();
-				varStore.SetValue("$desertNote", true);
+				sprRenderer.sprite = nextSprite;
+				boxCol.size = new Vector2(0.6366018f, 0.6470239f);
 			} else {
 				FindObjectOfType<DialogueRunner>().StartDialogue(GetComponent<NPC>().talkToNode);
 			}
