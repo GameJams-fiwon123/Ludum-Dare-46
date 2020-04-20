@@ -12,23 +12,33 @@ public class LevelManager : MonoBehaviour
 		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
 	}
 
+	public void Clique() {
+		FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Clique");
+	}
+
 	public void LoadDoctor() {
+		Destroy(FindObjectOfType<TitleMusic>().gameObject);
+		Clique();
 		SceneManager.LoadScene("Doctor");
 	}
 
 	public void LoadMainMenu() {
+		Clique();
 		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void LoadCredtis() {
+		Clique();
 		SceneManager.LoadScene("Credits");
 	}
 
 	public void LoadTutorial() {
+		Clique();
 		SceneManager.LoadScene("Tutorial");
 	}
 
 	public void ExitGame() {
+		Clique();
 		Application.Quit();
 	}
 

@@ -66,6 +66,28 @@ MonoBehaviour:
     Value: 0.8
   - Name: sol
     Value: 0.8
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 0
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 0
+  - Name: 
+    Value: 0.265
+  - Name: 
+    Value: 1
+  - Name: 
+    Value: 0.489
+  - Name: Vol Geral
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
