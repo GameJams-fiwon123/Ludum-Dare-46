@@ -39,4 +39,8 @@ public class NotesManager : MonoBehaviour
 			}
 		}
 	}
+
+	private void OnDestroy() {
+		SceneManager.sceneLoaded -= OnSceneLoaded;
+	}
 }
