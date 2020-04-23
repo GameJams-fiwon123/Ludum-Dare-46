@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Loading : MonoBehaviour
 {
+	bool isLoading = false;
+
 	private void Update() {
-		if (FMODUnity.RuntimeManager.HasBankLoaded("Master_Bank")) {
-			Debug.Log("Master Bank Loaded");
+		if (FMODUnity.RuntimeManager.HasBankLoaded("Master_Bank") && isLoading) {
 			SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
 		}
+	}
+
+	public void Loaded() {
+		isLoading = true;
 	}
 }
