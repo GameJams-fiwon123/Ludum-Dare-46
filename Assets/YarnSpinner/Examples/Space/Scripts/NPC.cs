@@ -43,11 +43,17 @@ namespace Yarn.Unity.Example
 		public YarnProgram scriptToLoad;
 
 
-		IEnumerator Start() {
+		void Start() {
+
+			//yield return new WaitForSeconds(0f);
+
 			if (scriptToLoad != null) {
-				yield return new WaitForSeconds(0.05f);
-				DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
-				dialogueRunner.Add(scriptToLoad);
+				foreach (Yarn.Unity.DialogueRunner d in FindObjectsOfType<Yarn.Unity.DialogueRunner>()) {
+					d.Add(scriptToLoad);
+				}
+
+				//DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
+				//dialogueRunner.Add(scriptToLoad);
 			}
 		}
 	}

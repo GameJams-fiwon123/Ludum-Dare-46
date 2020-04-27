@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
         type: 3}
       propertyPath: m_ForceIntoRT
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2924885008371789710, guid: 952a0d39e3c11f344883cf313da556be,
         type: 3}
@@ -701,7 +701,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Arrows: Move
+  m_Text: 'Arrows: Walk
 
     Z: Interact
 
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 700, y: 700}
