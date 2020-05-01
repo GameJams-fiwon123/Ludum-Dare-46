@@ -17,17 +17,15 @@ public class NotesManager : MonoBehaviour
 
 	private void Start() {
 		SceneManager.sceneLoaded += OnSceneLoaded;
-		StartCoroutine(VerifyNotes());
+		VerifyNotes();
 	}
 
 	public void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-		StartCoroutine(VerifyNotes());
+		VerifyNotes();
 	}
 
-	IEnumerator VerifyNotes() {
-		yield return new WaitForSeconds(0.05f);
-
-		TeleportManager.placesName currentPlace = FindObjectOfType<TeleportManager>().currentPlace;
+	public void VerifyNotes() {
+		TeleportManager.placesName currentPlace = GameManager.instance.currentPlace;
 
 		foreach (Note note in notes) {
 			if (note.placeName == currentPlace) {

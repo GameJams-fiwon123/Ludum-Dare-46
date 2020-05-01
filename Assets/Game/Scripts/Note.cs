@@ -16,6 +16,7 @@ public class Note : MonoBehaviour
 	}
 
 	private void OnDestroy() {
-		FindObjectOfType<AudioManager>().audioGameplay.SetParameter(gameObject.name, 0f);
+		 if (gameObject.activeSelf)
+			FindObjectOfType<AudioManager>().audioGameplay.SetParameter(gameObject.name, 0f);
 	}
 }

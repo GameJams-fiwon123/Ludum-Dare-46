@@ -9,7 +9,9 @@ public class LevelManager : MonoBehaviour
 		yield return new WaitForSeconds(0.01f);
 		SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
 		yield return new WaitForSeconds(0.01f);
-		SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+		for (int i = 0; i < SceneManager.sceneCount - 1; i++) {
+			SceneManager.UnloadSceneAsync(SceneManager.GetSceneAt(i));
+		}
 	}
 
 	public void Clique() {

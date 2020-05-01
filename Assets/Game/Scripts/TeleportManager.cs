@@ -9,7 +9,7 @@ public class TeleportManager : MonoBehaviour
 
 	public placesName currentPlace;
 
-	public void Start() {
+  void Awake() {
 		if (GameManager.instance.currentPlace != placesName.None) {
 			foreach (Transform t in transform) {
 				if (t.GetComponent<Teleport>().nextPlace == GameManager.instance.currentPlace) {
